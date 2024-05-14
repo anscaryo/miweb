@@ -1,7 +1,10 @@
 #	Curso Git (HolaMundo)
+
+
 ##	Para ver la versión instalada (no es necesiario si tienes el sistema acutalizado)
 ❯ git --version
 git version 2.45.0
+
 
 ##	Configuración Global
 	- git config --global user.name "Oscar Flores"	//configura el nombre de usuario
@@ -10,6 +13,7 @@ git version 2.45.0
 	- git config --global core.editor "nvim -f"	//Configura el editor por defecto
 	- git config --global -e	//muestra la configuración en el editor.
 	- git config --global core.autocrlf input (mac y linux) true (windows)
+
 
 ##	Primeros pasos.
 	- git init	//inicializa git para controlar todo lo que este en la carpeta.
@@ -26,10 +30,19 @@ git version 2.45.0
 	- git log --oneline --decorate --graph	(glog)
 	- git log --oneline --decorate --graph --all	(gloga)
 	
+
+
 ##	Branch (Ramas)
 	- git branch 	// muestra las ramas presentes
 	- git checkout -b {nombre branch}
 	- git merch {nombre rama}	// trae los cambios de la rama secundaria a la *actual*.
+
+
+##	GitHub (Subir repositorios a la "nuve")
+	- Creamos un repositorio en github.com 	// Crear sin readme ni licencia.
+	- git remote add origin git@github.com:anscaryo/miweb.git
+	- git push -u origin main
+	- git push -u origin {nombre rama}	//para subir el contenido de una rama en concreto.
 
 
 ##	Volver a un estado anterior (rollball)
